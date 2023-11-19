@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crud - project</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="w-75 bg-body-secondary p-5 m-auto">
+    <label for="productName">Product Name</label>
+    <input type="text" class="form-control" id="productName">
+    <label for="productPrice">Product Price</label>
+    <input type="text" class="form-control" id="productPrice">
+    <label for="productCategory">Product Category</label>
+    <input type="text" class="form-control" id="productCategory">
+    <label for="productdescription">Product Description</label>
+    <textarea class="form-control" id="productdescription"></textarea>
+<button id="addButton" class="btn btn-primary mt-3 mb-3 float-end">Add product</button>
+<div class="clearfix"></div>
+<input onkeyup="search(this.value)" type="text" class="form-control my-3" placeholder="search">
+<table class="table table-striped">
+    <thead>
+        <th>Product Name</th>
+        <th>Product Price</th>
+        <th>Product Category</th>
+        <th>Product Description</th>
+    </thead>
+    <tbody id="tablebody">
+
+    </tbody>
+</table>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<script src="javascript/bootstrap.bundle.min.js"></script>
+
+    <script src="javascript/main.js"></script>
+</body>
+</html>
